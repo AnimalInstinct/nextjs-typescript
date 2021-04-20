@@ -6,8 +6,14 @@ import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
+import { Post } from '../types/blog'
 
-export default function Index({ allPosts }) {
+interface Props {
+  allPosts: Post[]
+}
+
+export default function Index(props: Props) {
+  const { allPosts } = props
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
   return (
