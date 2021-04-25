@@ -6,7 +6,6 @@ import { Post } from '../types/blog'
 
 export default function HeroPost(props: Post) {
   const { title, coverImage, date, excerpt, author, slug } = props
-  console.log(coverImage)
   return (
     <section>
       <div className='mb-8 md:mb-16'>

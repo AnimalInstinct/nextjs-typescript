@@ -14,7 +14,6 @@ interface Props {
 
 export default function Index(props: Props) {
   const { allPosts } = props
-  console.log(allPosts)
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
   return (
