@@ -13,3 +13,9 @@ ogImage:
 ## My first blog post wow
 
 I have never expected that one day i will start to write my first post in my own self-hosted blog, builded by me in 5 minutes using NextJs framework!
+
+```javascript
+// Hey here is my awesome javascript code:
+const x = 1
+const y = 2
+```

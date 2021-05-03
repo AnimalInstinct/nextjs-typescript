@@ -5,6 +5,9 @@ const nextConfig = {
   images: {
     domains: ['lh3.googleusercontent.com'],
   },
+  env: {
+    PRISMTHEME: 'tomorrow',
+  },
 }
 
 module.exports = withPlugins([[withImages]], nextConfig)

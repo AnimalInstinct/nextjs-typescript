@@ -1,6 +1,6 @@
-import Alert from './alert'
 import Footer from './footer'
 import Meta from './meta'
+import Head from 'next/head'
 
 interface Props {
   preview?: any
@@ -12,8 +12,13 @@ export default function Layout(props: Props) {
   return (
     <>
       <Meta />
+      <Head>
+        <link
+          href={`https://unpkg.com/prismjs@0.0.1/themes/prism-${process.env.PRISMTHEME}.css`}
+          rel='stylesheet'
+        />
+      </Head>
       <div className='min-h-screen'>
-        <Alert preview={preview} />
         <main>{children}</main>
       </div>
       <Footer />
